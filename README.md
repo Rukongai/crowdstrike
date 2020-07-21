@@ -1,6 +1,6 @@
 # CrowdStrike Falcon Module for Munkireport
 
-This module gives info on the CrowdStrike Falcon sensor for a given machine. The data comes from the `sysctl cs` command.
+This module gives info on the CrowdStrike Falcon sensor for a given machine. The data comes from the `/Library/CS/falconctl stats` command.
 ![CrowdStrike Listing](https://raw.githubusercontent.com/dcoobs/crowdstrike/master/images/CrowdStrikeListing.png)
 
 Included are widgets for sensor versions:
