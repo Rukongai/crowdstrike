@@ -9,7 +9,6 @@
     <div class="row">
 
         <?php $widget->view($this, 'crowdstrike_sensor_versions'); ?>
-        <?php $widget->view($this, 'crowdstrike_installguard'); ?>
 
     </div> <!-- /row -->
 
