@@ -142,23 +142,4 @@ class Crowdstrike_controller extends Module_controller
         $obj->view('json', array('msg' => $out));
     }
 
-    /**
-     * Get installguard/uninstall protection stats
-     *
-     * @return void
-     * @author dcoobs
-     **/
-
-    public function get_crowdstrike_installguard_stats()
-    {
-        $obj = new View();
-        if(! $this->authorized()) {
-            $obj->view('json', array('msg' => array('error' => 'Not authenticated')));
-            return;
-        }
-        $crowdstrike_installguard_stats = new Crowdstrike_model();
-        $out = [];
-        $out['stats'] = $crowdstrike_installguard_stats->get_crowdstrike_installguard_stats();
-        $obj->view('json', array('msg' => $out));
-    }
 } //end of class
