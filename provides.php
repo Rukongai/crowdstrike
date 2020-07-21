@@ -8,7 +8,6 @@ return array(
         'crowdstrike' => array('view' => 'crowdstrike_listing', 'i18n' => 'crowdstrike.crowdstrike'),
     ),
     'widgets' => array(
-        'crowdstrike_installguard' => array('view' => 'crowdstrike_installguard_widget', 'i18n' => 'crowdstrike.installguard-widget'),
         'crowdstrike_sensor_versions' => array('view' => 'crowdstrike_sensor_versions_widget', 'i18n' => 'sensor-versions-widget'),
         'crowdstrike_sensor_versions_graph' => array('view' => 'crowdstrike_sensor_versions_graph_widget', 'i18n' => 'sensor-versions-widget'),
     ),
