@@ -26,10 +26,5 @@ $this->view('listings/default',
       "column" => "crowdstrike.customer_id",
       "i18n_header" => "crowdstrike.customer_id",
     ],
-    [
-      "column" => "crowdstrike.sensor_installguard",
-      "i18n_header" => "crowdstrike.sensor_installguard",
-      "formatter" => "binaryEnabledDisabled",
-    ],
   ]
 ]);
