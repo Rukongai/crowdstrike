@@ -27,9 +27,9 @@ fi
 mkdir -p "${CACHEDIR}"
 
 # Gather standard CrowdStrike Falcon information and settings
-cs_sensor_id=$(sudo /Library/CS/falconctl stats | grep agentID | awk '{print $2}')
-cs_customer_id=$(sudo /Library/CS/falconctl stats | grep customerID | awk '{print $2}')
-cs_sensor_version=$(sudo /Library/CS/falconctl stats | grep version | awk '{print $2}')
+cs_sensor_id=$(sudo /Library/CS/falconctl stats agent_info | grep agentID | awk '{print $2}')
+cs_customer_id=$(sudo /Library/CS/falconctl stats agent_info | grep customerID | awk '{print $2}')
+cs_sensor_version=$(sudo /Library/CS/falconctl stats agent_info | grep version | awk '{print $2}')
 
 # Output data into file
 defaults write "$OUTPUT_FILE" sensor_id "$cs_sensor_id"
